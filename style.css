@@ -1,6 +1,6 @@
 @charset "UTF8";
 
-/*Configurações Gerais*/
+/*_____________________config. gerais______________________*/
 *{
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -9,65 +9,116 @@
 img{
     border-radius: 10px;
 }
+
 main{
-    padding-left: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-h2{
+
+header > h1{ /*_____________________HEADER______________________*/
+    background-color: #02A28F;
+    color: white;
+    height: 50px;
+    padding-left: 10%;
+    padding-top: 13px;
+    margin-bottom: 4%;
+    font-weight: 500;
+}
+
+h2{ /*_____________________título lateral_____________________*/
+    background-color: #02A28F;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
     font-size: 1.3em;
     font-weight: 600;
     padding-top: 10px;
     padding-left: 20px;
 }
 
-/*HEADER*/
-header > h1{
-    background-color: #02A28F;
-    color: white;
-    height: 60px;
-    padding-left: 150px;
-    padding-top: 13px;
-    margin-bottom: 4%;
+
+/*_____________________post principal______________________*/
+
+.container{
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
 }
 
-/*POST PRINCIPAL*/
-#fotoheader{
-    max-width: 700px;
-    
-}
-#titulorecentes{
-    background-color: #02A28F;
-    border-radius: 10px;
-    width: 700px;
-    height: 50px;
-    color: white;
 
-}
-.cards{
-    box-shadow: 2px 2px 4px rgba(188, 188, 188, 0.603);
-    border-radius: 13px;
-    width: 380px;
-    height: 400px;
-}
 
-.container2 > .cards {
-    display: grid;
-    columns: 2;
+.side-container{
     
 }
 
-h2{
-    background-color: #02A28F;
-    border-radius: 10px;
-    height: 40px;
-    color: white;
+.side-container-title{
+    margin-bottom: 15px;
 }
 
-/*FOOTER*/
+.side-container > div{
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.291);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 360px;
+    height: 96px
+    
+    
+}
+
+.side-container > div > img{
+    width: 132px;
+    height: 70px;
+    margin: 1rem;
+}
+
+
+
+.side-container > div > p{
+    color: #616161;
+    font-size: 0.8rem
+}
+
+
+#main{
+    background-image: url(images/header700.jpeg);
+    border-radius: 15px;
+    color: white;   
+}
+
+#post-principal{
+    background-image: linear-gradient(to bottom, #66666600, black), url(/images/header700.jpeg);
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+}
+
+#post-principal > h1, .p1{
+    padding-left: 15px;
+    position: relative;
+    top: 70%;
+}
+
+span{
+    margin: 10px;
+}
+span > h3{
+    font-size: 0.9rem;
+}
+
+span > p{
+    font-size: 0.8rem;
+}
+
+
+
+/*_______________FOOTER_______________*/
 footer{
     background-color: #02A28F;
     height: 30px;
     color: white;
     text-align: center;
-    font-size: 1em;
-    padding-top: 10px;
+    font-size: 0.8em;
+    padding-top: 13px;
 }
