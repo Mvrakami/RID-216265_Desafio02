@@ -44,6 +44,7 @@
                 <p>22 Agosto 2022</p>
             </div> 
         </article>
+        
             <aside>
                 <!--LATERAL: categorias-->
                 <h2 class="tituloSidebar">Categorias</h2>
@@ -58,4 +59,4 @@
                        <li>(1)</li>
                    </ul>               
             </aside>  
-        </div>
+</div>

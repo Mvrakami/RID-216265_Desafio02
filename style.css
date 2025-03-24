@@ -46,14 +46,14 @@ li{
     display: flex;
     gap: 15px;
     margin: 10px 0;
-    width: 850px;
+    width: 1115px;
     
 }
 
 
 
 .side-container{
-    
+    width: 40%;
 }
 
 .side-container-title{
@@ -136,7 +136,7 @@ li{
     background-image: linear-gradient(to bottom, #66666600, black), url(/images/header700.jpeg);
     border-radius: 10px;
     color: white;
-    width: 500px;
+    width: 60%;
     
 }
 
@@ -162,9 +162,6 @@ span > p{
 }
 /*______________container2_______________*/
 
-#container2{
-    display: flex;
-}
 
 
 article{
@@ -180,9 +177,12 @@ article > .foto-cards{
 
 
 #container2{
-    width: 765px;
+    
 }
 
+.cards > .fotocards{
+    width: 360px;
+}
 /*_______________FOOTER_______________*/
 footer{
     background-color: #02A28F;
