@@ -6,15 +6,6 @@
     margin: 0px;
 }
 
-img{
-    border-radius: 10px;
-}
-
-main{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 header > h1{ /*_____________________HEADER______________________*/
     background-color: #02A28F;
     color: white;
@@ -23,6 +14,15 @@ header > h1{ /*_____________________HEADER______________________*/
     padding-top: 13px;
     margin-bottom: 4%;
     font-weight: 500;
+}
+
+img{
+    border-radius: 10px;
+}
+
+main{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h2{ /*_____________________título lateral_____________________*/
@@ -43,12 +43,12 @@ h2{ /*_____________________título lateral_____________________*/
     display: flex;
     gap: 15px;
     margin: 10px 0;
+    width: 850px;
+    
 }
 
-
-
 .side-container{
-    
+    max-width: 350px;
 }
 
 .side-container-title{
@@ -61,16 +61,18 @@ h2{ /*_____________________título lateral_____________________*/
     display: flex;
     align-items: center;
     margin: 10px 0;
-    width: 360px;
-    height: 96px
-    
-    
+    max-width: 350px;
+    height: 96px      
+}
+
+.side-container > #ultima{
+    margin-bottom: 0;
 }
 
 .side-container > div > img{
-    width: 132px;
-    height: 70px;
-    margin: 1rem;
+    max-width: 132px;
+    max-height: 70px;
+    margin: .8rem;
 }
 
 
@@ -91,25 +93,48 @@ h2{ /*_____________________título lateral_____________________*/
     background-image: linear-gradient(to bottom, #66666600, black), url(/images/header700.jpeg);
     border-radius: 10px;
     color: white;
-    width: 100%;
+    width: 500px;
+    
 }
 
-#post-principal > h1, .p1{
+#post-principal > #textos-post-principal{
     padding-left: 15px;
-    position: relative;
-    top: 70%;
+    position: absolute;
+    top: 55%;
+}
+
+#post-principal > #textos-post-principal > h1{
+    font-size: 1.7rem;
 }
 
 span{
-    margin: 10px;
+    margin: 0 10px 0 0;
 }
 span > h3{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 span > p{
     font-size: 0.8rem;
 }
+/*______________container2_______________*/
+
+#container2{
+    display: flex;
+}
+
+
+article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+article > .foto-cards{
+    width: ;
+}
+
+
+
 
 
 
