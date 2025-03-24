@@ -6,7 +6,7 @@
     margin: 0px;
 }
 
-header > h1{ /*_____________________HEADER______________________*/
+header > h1{ /*HEADER*/
     background-color: #02A28F;
     color: white;
     height: 50px;
@@ -25,7 +25,7 @@ main{
     margin-right: 10%;
 }
 
-h2{ /*_____________________título lateral_____________________*/
+h2{ /*títulos laterais*/
     background-color: #02A28F;
     border-radius: 10px;
     height: 40px;
@@ -36,8 +36,11 @@ h2{ /*_____________________título lateral_____________________*/
     padding-left: 20px;
 }
 
-
-/*_____________________post principal______________________*/
+li{
+    list-style: none;
+    padding: 0;
+    column-count: 2;
+}
 
 .container{
     display: flex;
@@ -47,8 +50,10 @@ h2{ /*_____________________título lateral_____________________*/
     
 }
 
+
+
 .side-container{
-    max-width: 350px;
+    
 }
 
 .side-container-title{
@@ -61,12 +66,10 @@ h2{ /*_____________________título lateral_____________________*/
     display: flex;
     align-items: center;
     margin: 10px 0;
-    max-width: 350px;
-    height: 96px      
-}
-
-.side-container > #ultima{
-    margin-bottom: 0;
+    width: 360px;
+    height: 96px
+    
+    
 }
 
 .side-container > div > img{
@@ -75,11 +78,51 @@ h2{ /*_____________________título lateral_____________________*/
     margin: .8rem;
 }
 
-
-
 .side-container > div > p{
     color: #616161;
     font-size: 0.8rem
+}
+
+
+.item-cards{
+    width: 360px;
+    height: 396;
+    box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.131);
+
+}
+
+.item-cards > div > img{
+    width: 360px;
+    height: 191px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.tema{
+    color: #02A28F;
+    padding: 5px 15px;
+    font-size: .9rem;
+}
+
+.titulo-recentes{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+
+.autor-data{
+    padding: 5px 15px 10px 15px;
+    font-size: .9rem;
+    color: #616161;
+}
+
+.texto{
+    padding: 5px 15px;
+    font-size: .9rem;
+}
+
+.item-cards > p:last-child{
+    padding-bottom: 100px;
 }
 
 
@@ -108,10 +151,10 @@ h2{ /*_____________________título lateral_____________________*/
 }
 
 span{
-    margin: 0 10px 0 0;
+    margin: 10px;
 }
 span > h3{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 span > p{
@@ -136,7 +179,9 @@ article > .foto-cards{
 
 
 
-
+#container2{
+    width: 765px;
+}
 
 /*_______________FOOTER_______________*/
 footer{
