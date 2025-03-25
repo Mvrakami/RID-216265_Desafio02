@@ -1,62 +1,185 @@
- <div> <!--cards-->
-        <article>
-            <h2 id="tituloRecentes">Posts mais recentes</h2>
-            <div class="cards">
-                <img class="fotocards" src="images/card1.jpeg" alt="Desenvolvendo em mobile">
-                <p class="theme">Desenvolvimento</p>
-                <h3>Desenvolvimento mobile</h3>
-                <p class="author"><strong>By</strong> Fabio Tetsuo</p>
-                <p>Lorem ipsum dolor sit amet consectetur. In <br>
-                    vitae urna commodo amet congue integer <br>
-                    dapibus. Interdum semper mauris convallis <br>
-                    fusce enim odio. Vitae montes ridiculus felis.</p>
-                <p>22 Agosto 2022</p>
-            </div>
-            <div class="cards">
-                <img class="fotocards" src="images/card2.jpeg" alt="Equilibrio entre trtabalho e vida pessoal">
-                <p class="theme">Saúde</p>
-                <h3>Balancear vida profissional e pessoal</h3>
-                <p class="author"><strong>By</strong> Ridho Satriawan</p>
-                <p>Lorem ipsum dolor sit amet consectetur. Et <br>
-                    consectetur at consectetur sed nisl tempor.</p>
-                <p>22 Agosto 2022</p>
-            </div>
-            <div class="cards">
-                <img class="fotocards" src="images/card3.jpeg" alt="Ferramenta VSCode">
-                <p class="theme">Desenvolvimento</p>
-                <h3>Configurando VSCode</h3>
-                <p class="author"><strong>By</strong> Fabio Tetsuo</p>
-                <p>Lorem ipsum dolor sit amet consectetur. Erat <br>
-                     interdum tortor ac sagittis id a etiam. Tellus <br>
-                     vitae arcu dignissim massa aliquam vel tellus. <br>
-                    Ipsum massa arcu nulla sed purus in ac.</p>
-                <p>22 Agosto 2022</p>
-            </div>
-            <div class="cards">
-                <img class="fotocards" src="images/card4.jpeg" alt="Tipos de tela">
-                <p class="theme">Produtividad</p>
-                <h3>2 monitores ou 1 ultrawide?</h3>
-                <p class="author"><strong>By</strong> Fulano da Silva</p>
-                <p>Lorem ipsum dolor sit amet consectetur. Arcu <br>
-                     tellus adipiscing sagittis tristique. Eget <br>
-                     molestie posuere enim pretium venenatis <br>
-                     nunc ligula donec a. Velit senectus amet nulla.</p>
-                <p>22 Agosto 2022</p>
-            </div> 
-        </article>
-        
-            <aside>
-                <!--LATERAL: categorias-->
-                <h2 class="tituloSidebar">Categorias</h2>
-                   <ul>
-                       <li>> Saúde</li>
-                       <li>> Desenvolvimento</li>
-                       <li>> Produtividade</li>
-                       <li>> Opinião</li>
-                       <li>(1)</li>
-                       <li>(2)</li>
-                       <li>(2)</li>
-                       <li>(1)</li>
-                   </ul>               
-            </aside>  
-</div>
+ header > h1{ /*HEADER*/
+    background-color: #02A28F;
+    color: white;
+    height: 50px;
+    padding-left: 10%;
+    padding-top: 13px;
+    margin-bottom: 4%;
+    font-weight: 500;
+}
+
+img{
+    border-radius: 10px;
+}
+
+main{
+    
+}
+
+h2{ /*títulos laterais*/
+    background-color: #02A28F;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+li{
+    list-style: none;
+    padding: 0;
+    column-count: 2;
+}
+
+.container{
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    width: 1115px;
+    
+}
+
+
+
+.side-container{
+    width: 40%;
+}
+
+.side-container-title{
+    margin-bottom: 15px;
+}
+
+.side-container > div{
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.291);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 360px;
+    height: 96px
+    
+    
+}
+
+.side-container > div > img{
+    max-width: 132px;
+    max-height: 70px;
+    margin: .8rem;
+}
+
+.side-container > div > p{
+    color: #616161;
+    font-size: 0.8rem
+}
+
+
+.item-cards{
+    width: 360px;
+    height: 396;
+    box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.131);
+
+}
+
+.item-cards > div > img{
+    width: 360px;
+    height: 191px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.tema{
+    color: #02A28F;
+    padding: 5px 15px;
+    font-size: .9rem;
+}
+
+.titulo-recentes{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+
+.autor-data{
+    padding: 5px 15px 10px 15px;
+    font-size: .9rem;
+    color: #616161;
+}
+
+.texto{
+    padding: 5px 15px;
+    font-size: .9rem;
+}
+
+.item-cards > p:last-child{
+    padding-bottom: 100px;
+}
+
+
+#main{
+    background-image: url(images/header700.jpeg);
+    border-radius: 15px;
+    color: white;   
+}
+
+#post-principal{
+    background-image: linear-gradient(to bottom, #66666600, black), url(/images/header700.jpeg);
+    border-radius: 10px;
+    color: white;
+    width: 60%;
+    
+}
+
+#post-principal > #textos-post-principal{
+    padding-left: 15px;
+    position: absolute;
+    top: 55%;
+}
+
+#post-principal > #textos-post-principal > h1{
+    font-size: 1.7rem;
+}
+
+span{
+    margin: 10px;
+}
+span > h3{
+    font-size: 0.9rem;
+}
+
+span > p{
+    font-size: 0.8rem;
+}
+/*______________container2_______________*/
+
+
+
+article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+article > .foto-cards{
+    width: ;
+}
+
+
+
+
+#container2{
+    
+}
+
+.cards > .fotocards{
+    width: 360px;
+}
+/*_______________FOOTER_______________*/
+footer{
+    background-color: #02A28F;
+    height: 30px;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 13px;
+}
