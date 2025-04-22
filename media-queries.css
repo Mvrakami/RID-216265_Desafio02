@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    aside.sidebar{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+}
