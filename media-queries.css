@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+
+- Pequenas telas: até 600px
+- Celular: de 601px até 768px
+- Tablet: 769px até 992px
+- Desktop: 993px até 1200px
+- Grandes telas: acima de 1200px
+*/
+
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+    
+    *{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 0px; 
+    box-sizing: border-box;
+      
+    }
+
+    header{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+    
+    h1{
+        font-size: 1.em;
+        text-align: left;
+        margin-left: 8%;
+     } 
+     
+     .p1{
+        position: relative;
+        top:75%;
+    }
+
+    #main-container{    
+        display: flex;
+        flex-flow: row nowrap;    
+    }
+
+    div#primary-content{
+        width: 65vw;
+    }
+
+    aside#sidebar, .div-side, .side-title{
+        width: 25vw;
+        padding-left: 10px;
+    }
+
+    #imagem-container{
+        height: 360px;
+    }
+
+    div.div-side{
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width:992px){
+    header{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+    
+    h1{
+        font-size: 1.em;
+        text-align: left;
+        margin-left: 8%;
+     } 
+     
+     .p1{
+        position: relative;
+        top:75%;
+    }
+
+    #main-container{    
+        display: flex;
+        flex-flow: row nowrap;    
+    }
+
+    div#primary-content{
+        width: 65vw;
+    }
+
+    aside#sidebar, .div-side, .side-title{
+        width: 25vw;
+        padding-left: 10px;
+    }
+
+    #imagem-container{
+        height: 360px;
+    }
+
+    div#cards-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        
+    }
+    div.cards{
+        width: 49%;
+        
+    }
+
+  
+}

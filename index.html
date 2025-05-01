@@ -15,21 +15,23 @@
         <h1>The Dev News</h1>
     </header>
     <main>
-        <div class="main-container">
+        <div id="main-container">
             <!-- Conteúdo Principal -->
-            <div class="primary-content">
+            <div id="primary-content">
                 <div id="imagem-container">
-                    <p class="p1">opinião</p>
-                    <h1 class="p1">Como é ser um desenvolvedor</h1>
-                    <p class="p1">By Fabio Tetsuo</p>
+                    <p class="p1" class="sub">opinião</p>
+                    <h2 class="p1">Como é ser um desenvolvedor</h2>
+                    <p class="p1" class="sub">By Fabio Tetsuo</p>
                 </div>
-
-                <!-- Posts Recentes -->
-                <section class="recent-posts">
+                <section id="recent-posts">
                     <h2 id="recent-posts-h2">Posts mais recentes<span><a href="#">Ver todos</a></span></h2>
-                    <div class="cards-container">
+
+                    <div id="cards-container">
+
                         <div class="cards">
-                            <img class="fotocards" src="images/card1.jpeg" alt="Desenvolvendo em mobile">
+                            <div class="img-card" id="img-1">
+                                <!--Adicionei a foto via CSS-->
+                            </div>
                             <p class="theme">Desenvolvimento</p>
                             <h3 class="h3-cards">Desenvolvimento mobile</h3>
                             <p class="author"><strong>By</strong> Fabio Tetsuo</p>
@@ -39,8 +41,11 @@
                                 fusce enim odio. Vitae montes ridiculus felis.</p>
                             <p class="data">22 Agosto 2022</p>
                         </div>
+
                         <div class="cards">
-                            <img class="fotocards" src="images/card2.jpeg" alt="Equilibrio entre trtabalho e vida pessoal">
+                            <div class="img-card" id="img-2">
+                                <!--Adicionei a foto via CSS-->
+                            </div>
                             <p class="theme">Saúde</p>
                             <h3 class="h3-cards">Balancear vida profissional e pessoal</h3>
                             <p class="author"><strong>By</strong> Ridho Satriawan</p>
@@ -48,8 +53,11 @@
                                 consectetur at consectetur sed nisl tempor.</p>
                             <p class="data">22 Agosto 2022</p>
                         </div>
+
                         <div class="cards">
-                            <img class="fotocards" src="images/card3.jpeg" alt="Ferramenta VSCode">
+                            <div class="img-card" id="img-3">
+                                <!--Adicionei a foto via CSS-->
+                            </div>
                             <p class="theme">Desenvolvimento</p>
                             <h3 class="h3-cards">Configurando VSCode</h3>
                             <p class="author"><strong>By</strong> Fabio Tetsuo</p>
@@ -57,10 +65,13 @@
                                  interdum tortor ac sagittis id a etiam. Tellus <br>
                                  vitae arcu dignissim massa aliquam vel tellus. <br>
                                 Ipsum massa arcu nulla sed purus in ac.</p>
-                            <p class="data" id="last-data">22 Agosto 2022</p>
+                            <p class="data">22 Agosto 2022</p>
                         </div>
+
                         <div class="cards">
-                            <img class="fotocards" src="images/card4.jpeg" alt="Tipos de tela">
+                            <div class="img-card" id="img-4">
+                                <!--Adicionei a foto via CSS-->
+                            </div>
                             <p class="theme">Produtividade</p>
                             <h3 class="h3-cards">2 monitores ou 1 ultrawide?</h3>
                             <p class="author"><strong>By</strong> Fulano da Silva</p>
@@ -68,34 +79,35 @@
                                  tellus adipiscing sagittis tristique. Eget <br>
                                  molestie posuere enim pretium venenatis <br>
                                  nunc ligula donec a. Velit senectus amet nulla.</p>
-                            <p class="data" id="last-data">22 Agosto 2022</p>
+                            <p class="data">22 Agosto 2022</p>
                     </div>
                 </section>
             </div>
 
+
             <!-- Sidebar -->
-            <aside class="sidebar">
-                <section>
-                    <h2 class="side-title" id="title1">Posts populares</h2>
-                    <div class="div-side"> 
-                        <img class="popular-posts-foto" src="images/side361.jpeg"alt="">
-                        <span class="side"> 
+            <aside id="sidebar">
+                <section id="posts-populares">
+                    <h2 class="side-title">Posts populares</h2>
+                    <div class="div-side" > 
+                        <div class="img-pop" id="pop1"></div>
+                        <span class="text-side"> 
                             <h3>Desenvolvimento atual</h3>
                             <p>22 Agosto 2022</p>
                         </span>
                     </div>
                     
                     <div class="div-side"> 
-                        <img class="popular-posts-foto" src="images/side2-361.jpeg"  alt="">
-                        <span class="side">
+                        <div class="img-pop" id="pop2"></div>
+                        <span class="text-side">
                             <h3>GitLab vs GitHub</h3>
                             <p>22 Agosto 2022</p>
                         </span>
                     </div>
                     
                     <div class="div-side"> 
-                        <img class="popular-posts-foto" src="images/side3-361.jpeg" alt="">
-                        <span class="side">
+                        <div class="img-pop" id="pop3"></div>
+                        <span class="text-side">
                             <h3>Café atrapalha?</h3>
                             <p>22 Agosto 2022</p>
                         </span>
@@ -103,7 +115,7 @@
                 </section>
 
                 <section id="categories">
-                    <h2 class="side-title" id="title2">Categorias</h2>
+                    <h2 class="side-title" id="title-categories">Categorias</h2>
                     <ul>
                         <li>> saúde <span class="number">(1)</span></li>
                         <li>> desenvolvimento <span class="number">(2)</span></li>
@@ -113,6 +125,7 @@
                 </section>
             </aside>
         </div>
+               
     </main>
 
     <footer>

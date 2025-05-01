@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+
+
+/*Typical Device Breakpoints
+
+- Pequenas telas: até 600px
+- Celular: de 601px até 768px
+- Tablet: 769px até 992px
+- Desktop: 993px até 1200px
+- Grandes telas: acima de 1200px
+*/
+
+
+/* MOBILE FIRST*/
+
+    *{
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;   
+        box-sizing: border-box;
+    }
+
+    main{
+        width: 80vw;
+        margin: auto; 
+    }
+/*_____________________cabeçalho e rodapé______________________*/
+    header{
+    width: 100vw;    
+    background-color: #02A28F;
+    text-align: center; 
+    margin-bottom: 10px;
+    }
+
+    header > h1{
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 1.3em;
+    }
+
+    footer{
+    background-color: #02A28F;
+    color: white;
+    font-size: .8rem;
+    padding: 8px;
+    text-align: center;
+    }
+
+  /*_____________________post principal______________________*/
+    #imagem-container{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.076), black), url(images/header700.jpeg);
+        background-size: cover;
+        color: white;
+
+        height: 50vh;  
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .p1{
+        position: relative;
+        top:65%;
+    }
+
+ /*_____________________TITULO: posts recentes______________________*/
+    #recent-posts-h2{
+        display: block;
+        background-color: #02A28F;
+        color: white;
+        font-weight: 600;
+        font-size: 1.3em;
+
+        margin-top: 13px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    span > a{
+        color: white;
+        text-decoration: underline;
+        font-size: .7rem;
+        font-weight: 400;
+        float: right;
+        padding-top: 7px;
+        
+    }
+
+ /*_____________________posts recentes______________________*/
+    
+    div.cards{
+        display: block;
+        margin-top: 18px;
+        padding-bottom: 18px;
+
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.188);
+        border-radius: 10px;
+    }    
+
+    .cards > .img-card{
+        height: 230px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        background-size: cover;
+    }
+    .cards > #img-1{
+        background-image: url(images/card1.jpeg);  
+    }
+
+    .cards > #img-2{
+        background-image: url(images/card2.jpeg);  
+    }
+    
+    .cards > #img-3{
+        background-image: url(images/card3.jpeg);  
+    }
+
+    .cards > #img-4{
+        background-image: url(images/card4.jpeg);  
+    }
+
+    div > .theme, .h3-cards, .author, .p-cards, .data{
+        padding: 6px;
+
+    }
+
+    div > .author, .data{
+        color: gray;
+        font-size: .9em;
+    }
+
+    p.theme{  
+        color: #02A28F;
+        font-size: .9em;
+    }
+
+    #primary-content{
+        margin-bottom: 10px;
+    }
+/*_____________________TITULOS LATERAIS______________________*/
+    h2.side-title{
+        height: 43px;
+        background-color: #02A28F;
+        font-size: 1.3;
+        font-weight: 600;
+        color: white;
+        padding: 8px;
+        padding-bottom: 14px;
+        border-radius: 10px;
+        
+    }
+/*_____________________ASIDE: posts populares______________________*/
+    .div-side{
+        margin-top: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.188);
+        border-radius: 10px;
+        padding: 10px;
+        display: inline-flex;
+        width: 80vw; 
+        
+    }
+
+    
+    div.img-pop{
+        
+        width: 120px;
+        height: 70px;
+        border-radius: 6px;
+        background-size: cover;
+        
+    }
+    div#pop1{
+        background-image: url(images/side1.jpeg);
+        
+    }
+    div#pop2{
+        background-image: url(images/side2.jpeg);
+    }
+    div#pop3{
+        background-image: url(images/side3.jpeg);
+    }
+
+    .text-side{
+        font-size: .8em;
+        padding-left: 10px;   
+    }
+
+    .text-side > p{
+        padding-top: 8px;
+        color: gray;  
+    }
+
+    section#categories{
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    section > ul{
+        list-style: none;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        color: gray;
+    }
+
+    .number{
+        float: right;
+    }
